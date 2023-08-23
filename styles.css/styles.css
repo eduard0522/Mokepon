@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&family=Righteous&family=Rubik+Moonrocks&display=swap");
+body {
+  font-family: "Righteous", cursive;
+  background-image: url("https://img.freepik.com/vector-premium/ninja-forest-juego-plataformas-juego-fichas_22191-322.jpg?w=2000");
+  background-color: #071952;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titulo {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-family: "Goblin One", cursive;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 28px;
+  text-align: center;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 180px;
+  height: 120px;
+  background-color: #0b666a;
+  padding: 10px;
+  color: aliceblue;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.tarjeta-de-mokepon:hover {
+  background-color: #041c1d;
+  cursor: pointer;
+}
+.tarjeta-de-mokepon img {
+  height: 100px;
+}
+input {
+  display: none;
+}
+input:checked + label {
+  background-color: #041c1d;
+}
+#btn-mascota {
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  font-family: "Righteous", cursive;
+  background-color: transparent;
+  border-radius: 10px;
+  border: solid;
+  margin-top: 20px;
+}
+
+#btn-mascota:hover {
+  border: solid #97feed 2px;
+  cursor: pointer;
+  font-size: 24px;
+  width: 170px;
+}
+
+.seleccionar-ataque {
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-ataque {
+  background-color: #0b666a;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-color: transparent;
+  width: 200px;
+  color: white;
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+}
+.btn-ataque:hover {
+  background-color: #041c1d;
+  border: solid 1px white;
+}
+.contenedor-ataques {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#mensajes {
+  width: 250px;
+  background-color: #35a29f;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btn-reiniciar {
+  border-radius: 20px;
+  background-color: transparent;
+  color: #071952;
+  font-family: "Righteous", cursive;
+  font-size: 18px;
+}
+
+#btn-reiniciar:hover {
+  border: solid 2px rgb(1, 39, 228);
+  color: #041c1d;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 170px 170px;
+}
+
+.ataques-jugador,
+.ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+}
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+#ver-mapa button{
+
+    width: 80px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    font-family: "Righteous", cursive;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid;
+    margin: 10px 0px;
+ 
+}
+
+@media (max-width: 560px) {
+  .tarjetas {
+    flex-direction: column;
+  }
+  .contenedor-ataques {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width:350px){
+  
+  #ver-mapa{
+    height: 100vh;
+    ju
+  }
+  #ver-mapa div{
+     display: flex;
+     align-items: center;
+     flex-direction:column ;
+    
+  }
+}
